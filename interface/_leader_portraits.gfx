@@ -61,7 +61,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_portrait_prc_hua_guofeng"
-		texturefile = "gfx/leaders/prc/portrait_prc_hua_guofeng .dds"
+		texturefile = "gfx/leaders/prc/portrait_prc_hua_guofeng.dds"
 	}
 	
 	spriteType = {

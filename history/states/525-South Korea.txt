@@ -9,6 +9,7 @@ state=
 	{
 		owner = ROK
 		add_core_of = KOR
+		add_core_of = ROK
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
