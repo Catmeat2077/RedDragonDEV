@@ -2,5 +2,5 @@ version="1"
 tags={
 	"Map"
 }
-name="RDD"
+name="RedDragonDEV"
 supported_version="1.12.7"
