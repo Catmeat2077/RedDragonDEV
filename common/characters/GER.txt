@@ -1,0 +1,38 @@
+characters={
+	GER_gerhard_lauck={
+		name="Gerhard Lauck"
+		portraits={
+			civilian={
+				large=GFX_portrait_ger_gerhard_lauck
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			traits=
+			expire=
+			id=-1
+		}
+	}
+	
+	GER_johann_mauerer={
+		name="Johann Richter von Maurer"
+		portraits={
+			army={
+				small="GFX_idea_johann_mauerer"
+				large=GFX_portrait_GER_johann_mauerer_general
+			}
+			civilian = {
+				large=GFX_portrait_GER_johann_mauerer_leader
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = johann_maurer
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}

@@ -1,0 +1,85 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file also ur fucking gay
+
+	spriteType = {
+		name = "GFX_portrait_operative_unknown"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown"
+		texturefile = "gfx/leaders/leader_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown_female"
+		texturefile = "gfx/leaders/leader_unknown_female.dds"
+	}
+
+
+	### USA
+
+	spriteType = {
+		name = "GFX_portrait_usa_ronald_reagan"
+		texturefile = "gfx/leaders/usa/portrait_usa_ronald_reagan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_usa_george_bush"
+		texturefile = "gfx/leaders/usa/portrait_usa_george_bush.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_usa_al_gore"
+		texturefile = "gfx/leaders/usa/portrait_usa_al_gore.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_usa_william_pierce"
+		texturefile = "gfx/leaders/usa/portrait_usa_william_pierce.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_usa_sus_gus"
+		texturefile = "gfx/leaders/usa/portrait_usa_sus_gus.dds"
+	}
+	
+	### SOV
+
+	spriteType = {
+		name = "GFX_portrait_sov_mikhail_gorbachev"
+		texturefile = "gfx/leaders/sov/portrait_sov_mikhail_gorbachev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_sov_velimir"
+		texturefile = "gfx/leaders/sov/portrait_sov_velimir.dds"
+	}
+	
+	### PRC
+
+	spriteType = {
+		name = "GFX_portrait_prc_hua_guofeng"
+		texturefile = "gfx/leaders/prc/portrait_prc_hua_guofeng .dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_prc_israel_epstein"
+		texturefile = "gfx/leaders/prc/portrait_prc_israel_epstein.dds"
+	}
+	
+	### DDR
+
+	spriteType = {
+		name = "GFX_portrait_ddr_erich_honecker"
+		texturefile = "gfx/leaders/ddr/portrait_ddr_erich_honecker.dds"
+	}
+	
+	### GER
+
+	spriteType = {
+		name = "GFX_portrait_ger_gerhard_lauck"
+		texturefile = "gfx/leaders/ger/portrait_ger_gerhard_lauck.dds"
+	}
+

@@ -1,0 +1,15 @@
+characters={
+	DDR_erich_honecker={
+		name="Erich Honecker"
+		portraits={
+			civilian={
+				large=GFX_portrait_ddr_erich_honecker
+			}
+		}
+		country_leader={
+			ideology=marxism_leninism_ideology
+			traits=
+			expire="1989.1.20.1"
+			id=-1
+		}
+	}

@@ -1,0 +1,30 @@
+characters={
+	PRC_hua_guofeng={
+		name="Hua Guofeng"
+		portraits={
+			civilian={
+				large="GFX_portrait_prc_hua_guofeng"
+			}
+		}
+		country_leader={
+			ideology=mao_zedong_thought_ideology
+			traits=
+			expire=
+			id=-1
+		}
+	}
+
+		PRC_israel_epstein={
+		name="Israel Epstein"
+		portraits={
+			civilian={
+				large=GFX_portrait_prc_israel_epstein
+			}
+		}
+		country_leader={
+			ideology=epstein_theory
+			traits=
+			expire=
+			id=-1
+		}
+	}

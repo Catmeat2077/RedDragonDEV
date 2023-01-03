@@ -1,0 +1,31 @@
+characters={
+	SOV_mikhail_gorbachev={
+		name="Mikhail Gorbachyov"
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_mikhail_gorbachev
+			}
+		}
+		country_leader={
+			ideology=market_socialism
+			traits=
+			expire=
+			id=-1
+		}
+	}
+	
+		SOV_velimir={
+		name="Valeriy Nikolayavich Yemel'yanov"
+		portraits={
+			civilian={
+				large=GFX_portrait_sov_velimir
+			}
+		}
+		country_leader={
+			ideology=esoteric_fascism
+			traits=
+			expire=
+			id=-1
+		}
+	}
+	
