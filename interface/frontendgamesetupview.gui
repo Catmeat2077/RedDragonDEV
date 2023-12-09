@@ -1743,7 +1743,7 @@ guiTypes = {
 		instantTextBoxType={
 			position = {x = 9 y = 12 }
 			name = "difficulty_text"
-			font = "hoi_24header"
+			font = "aldrich_16_outline"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 348
 			maxHeight = 16
@@ -1871,25 +1871,6 @@ guiTypes = {
 		checkboxType = {
 			name = "ironman_cb"
 			position = { x=530 y =101}
-			quadTextureSprite ="GFX_generic_checkbox"
-			clicksound = click_checkbox
-		}
-
-		instantTextBoxType={
-			position = {x = 30 y = 148 }
-			name = "historical_text"
-			font = "hoi_24header"
-			maxWidth = 370
-			maxHeight = 16
-			text = "FE_HISTORICAL"
-			pdx_tooltip = "FE_HISTORICAL_TOOLTIP"
-			format = left
-			fixedsize = yes
-		}
-
-		checkboxType = {
-			name = "historical_cb"
-			position = { x=530 y =145}
 			quadTextureSprite ="GFX_generic_checkbox"
 			clicksound = click_checkbox
 		}
@@ -2064,7 +2045,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				clicksound = click_default
 				oversound = ui_menu_over
-				shortcut = "i"
+				shortcut = "r"
 			}
 
 			ButtonType = {

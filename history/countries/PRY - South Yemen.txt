@@ -1,0 +1,29 @@
+﻿capital = 659
+
+oob = "YEM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = YEM_imam_yahya
+
+set_war_support = 0.1
+set_stability = 0.8
+set_convoys = 5
+
+set_politics = {
+	ruling_party = communism
+	last_election = 
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 90
+	neutrality = 1
+	mao_zedong_thought = 2
+	democracy = 3
+	socialism = 5
+}
+

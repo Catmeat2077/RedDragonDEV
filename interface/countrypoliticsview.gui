@@ -51,7 +51,7 @@ guiTypes = {
 			frame = 1
 		}
 
-		  containerWindowType = {
+				  containerWindowType = {
 		   name = "chart_explanation"
 		   position = { x = 300 y = 305 }
 		   size = { width = 240 height = 60 }
@@ -72,7 +72,7 @@ guiTypes = {
 			slotsize = { width = 230 height = 14 }
 			format = "UPPER_LEFT"
 		   }
-		}
+		  }
 		
 		containerWindowType = {
 			name = "political_pie_chart"

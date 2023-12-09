@@ -1,0 +1,15 @@
+characters={
+	LRA_joseph_kony={
+		name="Joseph Rao Kony"
+		portraits={
+			civilian={
+				large=GFX_portrait_lra_joseph_kony
+			}
+		}
+		country_leader={
+			ideology=theocracy
+			traits=
+			expire=
+			id=-1
+		}
+	}

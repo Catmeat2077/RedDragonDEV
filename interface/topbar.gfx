@@ -269,12 +269,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_topbar_date_overlay"
-		texturefile = "gfx//interface//topbar//topbar_date_overlay.dds"
-		transparencecheck = yes
-	}
-
-	spriteType = {
 		name = "GFX_empty_button"
 		texturefile = "gfx//interface//empty_button.dds"
 	}	

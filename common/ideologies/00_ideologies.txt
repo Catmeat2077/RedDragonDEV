@@ -4,13 +4,22 @@ ideologies = {
 
 		types = {
 
-			left_anarchism = {
+			anarchism = {
 			}
 			
-			ba'athism = {
+			baathism = {
 			}
 			
 			juche = {
+			}
+			
+			national_bolshevism = {
+			}
+			
+			third_international_theory = {
+			}
+			
+			black_nationalism = {
 			}
 
 		}
@@ -38,7 +47,7 @@ ideologies = {
 	}
 	
 	
-	marxism_leninism = {
+	communism = {
 
 		types = {
 
@@ -88,9 +97,6 @@ ideologies = {
 			mao_zedong_thought_ideology = {
 			}
 			
-			epstein_theory = {
-			}
-
 			marxism_leninism_maoism = {
 			}
 
@@ -129,14 +135,9 @@ ideologies = {
 			social_democracy_ideology = {
 			}
 
-			progressive_democracy = {
+			populism = {
 			}
 
-			left_populism = {
-			}
-
-			social_nationalism = {
-			}
 		}
 
 		dynamic_faction_names = {
@@ -161,14 +162,11 @@ ideologies = {
 	}
 
 
-	liberalism = {
+	democratic = {
 
 		types = {
 
-			social_liberalism = {
-			}
-
-			classical_liberalism = {
+			liberalism = {
 			}
 			
 			libertarianism = {
@@ -201,7 +199,7 @@ ideologies = {
 	}
 	
 
-	despotism = {
+	neutrality = {
 
 		types = {
 
@@ -247,15 +245,6 @@ ideologies = {
 			neo_nazism = {
 			}
 
-			apartheid = {
-			}
-
-			esoteric_fascism = {
-			}
-			
-			pinochetism = {
-			}
-			
 			ultranationalism = {
 			}
 			
@@ -269,7 +258,7 @@ ideologies = {
 
 		color = { 150 75 0 }
 
-		war_impact_on_world_tension = 1.0 #racist
+		war_impact_on_world_tension = 1.0 #racistsexisthomophobicbigot
 		faction_impact_on_world_tension = 0.5
 
 		rules = {

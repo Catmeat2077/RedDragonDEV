@@ -116,7 +116,7 @@
  SOV_patriarch_meletius:0 "Patriarch Meletius"
 
  #ARGENTINA
- ARG_senor_hitler:0 "Señor Drumpft"
+ ARG_senor_hitler:0 "Señor Hilter"
 
  #AUSTRIA
  AUS_kurt_schuschnigg:0 "Kurt Schuschnigg"
@@ -386,7 +386,7 @@
  #ITALY
  ITA_benito_mussolini:0 "Benito Mussolini"
  ITA_ferruccio_parri:0 "Ferruccio Parri"
- ITA_victor_emmanuel_iii:0 "Victor Emmanuel III"
+ ITA_vittorio_emanuele_iii:1 "Vittorio Emanuele III"
  ITA_palmiro_togliatti:0 "Palmiro Togliatti"
  ITA_pietro_badoglio:0 "$pietro_badoglio$"
  ITA_emilio_de_bono:0 "$emilio_de_bono$"
@@ -529,7 +529,7 @@
  ENG_alan_turing:0 "$eng_alan_turing$"
 
  #GERMANY
- GER_adolf_hitler:0 "Donald Drumpft"
+ GER_adolf_hitler:0 "Adolf Hitler"
  GER_konrad_adenauer:0 "Konrad Adenauer"
  GER_wilhelm_pieck:0 "Wilhelm Pieck"
  GER_gerd_von_rundstedt:0 "$gerd_von_rundstedt$"
@@ -661,7 +661,7 @@
  JAP_hitoshi_imamura:0 "$hitoshi_imamura$"
  JAP_masatane_kanda:0 "Masatane Kanda"
  JAP_kuniaki_koiso:0 "Kuniaki Koiso"
- JAP_isoroku_yamamoto:0 "$isoroku_yamamoto$"
+ JAP_isoroku_yamamoto:1 "$isoroku_yamamoto$"
  JAP_mineichi_koga:0 "Mineichi Koga"
  JAP_kiyoshi_hasegawa:0 "Kiyoshi Hasegawa"
  JAP_shigeyoshi_inoue:0 "Shigeyoshi Inoue"
@@ -905,7 +905,7 @@
  NZL_edmund_rupert_drummond:0 "Edmund Rupert Drummond"
  NZL_peter_phipps:0 "Peter Phipps"
  #FINLAND
- FIN_risto_heikki_ryti:0 "Risto Heikki Ryti"
+ FIN_risto_ryti:0 "Risto Ryti"
  FIN_aimo_aaltonen:0 "Aimo Aaltonen"
  FIN_vilho_annala:0 "Vilho Annala"
  FIN_kyosti_kallio:0 "Kyösti Kallio"
@@ -939,8 +939,9 @@
  
  #SWITZERLAND
  SWI_federal_council:0 "Federal Council"
+ SWI_federal_assembly:0 "Federal Assembly"
  SWI_ernest_beuin:0 "Ernest Béuin"
- SWI_dr_max_leo_keller:0 "Dr. Max Leo Keller"
+ SWI_max_leo_keller:1 "Max Leo Keller"
  SWI_fritz_platten:0 "Fritz Platten"
  SWI_henri_guisan:0 "Henri Guisan"
 

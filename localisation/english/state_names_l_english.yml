@@ -652,7 +652,7 @@
  STATE_651:0 "Ufa"
  STATE_652:0 "Orenburg"
  STATE_653:0 "Sverdlovsk"
- STATE_654:1 "Oyrot Region" #(Was Gorno-Altaysk), was renamed to Gorno-Altaysk in 1948
+ STATE_654:1 "Gorno-Altaysk"
  STATE_655:0 "North Sakhalin"
  STATE_656:0 "Kuwait"
  STATE_657:0 "Birobidzhan"

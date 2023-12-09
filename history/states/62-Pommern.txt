@@ -16,17 +16,12 @@ state={
 			infrastructure = 3
 			fuel_silo = 1
 		}
+		add_core_of = WGR
 		add_core_of = DDR
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 8
-			}
-		}
 	}
 
 	provinces={
-		349 3207 3258 3312 3340 9388 
+		349 3207 3258 3312 3340 9388 13257
 	}
 
 	local_supplies=3.0 

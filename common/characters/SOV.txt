@@ -3,7 +3,7 @@ characters={
 		name="Mikhail Gorbachyov"
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_mikhail_gorbachev
+				large=gfx\leaders\SOV\pizzaman.dds
 			}
 		}
 		country_leader={
@@ -18,7 +18,7 @@ characters={
 		name="Valeriy Nikolayavich Yemel'yanov"
 		portraits={
 			civilian={
-				large=GFX_portrait_sov_velimir
+				large=gfx\leaders\SOV\velimir.dds
 			}
 		}
 		country_leader={

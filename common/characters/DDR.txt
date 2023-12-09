@@ -3,7 +3,7 @@ characters={
 		name="Erich Honecker"
 		portraits={
 			civilian={
-				large=GFX_portrait_ddr_erich_honecker
+				large=gfx\leaders\DDR\erich_honecker.dds
 			}
 		}
 		country_leader={

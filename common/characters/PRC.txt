@@ -3,7 +3,7 @@ characters={
 		name="Hua Guofeng"
 		portraits={
 			civilian={
-				large="GFX_portrait_prc_hua_guofeng"
+				large=GFX\leaders\prc\portrait_prc_hua_guofeng.dds
 			}
 		}
 		country_leader={
@@ -18,7 +18,7 @@ characters={
 		name="Israel Epstein"
 		portraits={
 			civilian={
-				large=GFX_portrait_prc_israel_epstein
+				large=GFX\leaders\prc\portrait_prc_israel_epstein.dds
 			}
 		}
 		country_leader={

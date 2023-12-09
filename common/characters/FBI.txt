@@ -1,0 +1,15 @@
+characters={
+	FBI_louis_freeh={
+		name="Louis J. Freeh"
+		portraits={
+			civilian={
+				large=GFX_portrait_fbi_louis_freeh
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits=
+			expire=
+			id=-1
+		}
+	}

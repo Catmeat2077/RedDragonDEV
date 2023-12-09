@@ -3,7 +3,7 @@ characters={
 		name="Gerhard Lauck"
 		portraits={
 			civilian={
-				large=GFX_portrait_ger_gerhard_lauck
+				large=GFX\leaders\ger\portrait_ger_gerhard_lauck.dds
 			}
 		}
 		country_leader={
@@ -18,11 +18,11 @@ characters={
 		name="Johann Richter von Maurer"
 		portraits={
 			army={
-				small="GFX_idea_johann_mauerer"
-				large=GFX_portrait_GER_johann_mauerer_general
+				small=
+				large=
 			}
 			civilian = {
-				large=GFX_portrait_GER_johann_mauerer_leader
+				large=
 			}
 		}
 		advisor={

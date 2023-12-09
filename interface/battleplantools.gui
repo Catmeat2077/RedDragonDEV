@@ -95,14 +95,6 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "btn_order_draw_naval_inv_with_harbor"
-				position = {x=123 y=33}
-				spriteType = "GFX_BPT_order_draw_naval_inv_with_harbor_btn"
-				clicksound = click_battleplan
-				oversound = ui_menu_over
-			}
-
-			buttonType = {
 				name = "btn_order_draw_paradrop"
 				position = {x=158 y=33}
 				spriteType = "GFX_BPT_order_draw_paradrop_btn"

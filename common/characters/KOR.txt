@@ -1,0 +1,8 @@
+characters={
+	KOR_Kim_il_Sung={
+		name="Kim il Sung"
+		portraits={
+			civilian={
+				large=gfx\leaders\kor\christian_dad.dds
+			}
+		}

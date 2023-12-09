@@ -1,4 +1,4 @@
-﻿capital = 384
+﻿capital = 374
 
 oob = 
 
@@ -10,10 +10,7 @@ set_technology = {
 set_war_support = 0.1
 set_stability = 0.8
 
-recruit_character = GER_gerhard_lauck
-
-recruit_character = GER_johann_maurer
-
+recruit_character = FBI_louis_freeh
 
 1995.1.1 = {
 
@@ -58,24 +55,13 @@ recruit_character = GER_johann_maurer
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = 
 	election_frequency = 
 	elections_allowed = no
 }
 
 set_popularities = {
-	fascism = neo_nazism
+	neutrality = 100
 }
 
-1995.1.1 = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = 
-		election_frequency = 
-		elections_allowed = no
-	}
-	set_popularities = {
-		neo_nazism = 100
-	}
-}

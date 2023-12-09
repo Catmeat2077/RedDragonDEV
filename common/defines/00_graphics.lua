@@ -100,8 +100,6 @@ NMapMode = {
 	SUPPLY_HOVERED_PROVINCE_COLOR_INDEX = 4, -- Border color of hovered province. Refers to the colors in BORDER_COLOR_CUSTOM_HIGHLIGHTS.
 	PEACE_HOVERED_STATE_COLOR_INDEX = 3 , -- Border color of hovered state in Peace conference. Refers to the colors in BORDER_COLOR_CUSTOM_HIGHLIGHTS.
 	PEACE_CLAIMED_STATE_COLOR_INDEX = 2 , -- Border color of claimed states in Peace conference. Refers to the colors in BORDER_COLOR_CUSTOM_HIGHLIGHTS.
-	SELECTION_HOVERED_STATE_COLOR_INDEX_CONTROLLED = 5, -- Border color of hovered controlled states in various select mapmodes. Refers to the colors in BORDER_COLOR_CUSTOM_HIGHLIGHTS.
-	SELECTION_HOVERED_STATE_COLOR_INDEX_FOREIGN = 6,	-- Border color of hovered foreign states in various select mapmodes. Refers to the colors in BORDER_COLOR_CUSTOM_HIGHLIGHTS.
 },
 
 NMapIcons = {
@@ -633,6 +631,7 @@ NGraphics = {
 	NAVAL_UNIT_MOVEMENT_SPEED = 12,
 	ARROW_MOVEMENT_SPEED = 2,
 	DRAW_COUNTRY_NAMES_CUTOFF = 260,                    -- Cutoff for drawing country names on the map
+	DRAW_DETAILED_CUTOFF = 400,
 	TRADEROUTE_SMOOTHNESS = 0.65,
 	TRADEROUTE_SMOOTHEN_PASSES = 2,
 	SUPPLYFLOW_SMOOTHNESS = 0.25,
@@ -650,9 +649,9 @@ NGraphics = {
 	ORDER_MOVE_SMOOTHNESS = 0.99,
 	ORDER_MOVE_SMOOTHEN_PASSES = 2,
 	UNIT_TURN_SPEED = 3,
-	BORDER_COLOR_SELECTION_STATE_R = 1.0,
-	BORDER_COLOR_SELECTION_STATE_G = 0.62,
-	BORDER_COLOR_SELECTION_STATE_B = 0.33,
+	BORDER_COLOR_SELECTION_STATE_R = 0.35,
+	BORDER_COLOR_SELECTION_STATE_G = 0.75,
+	BORDER_COLOR_SELECTION_STATE_B = 0.75,
 	BORDER_COLOR_SELECTION_STATE_A = 1.0,
 	BORDER_COLOR_SELECTION_SUPPLY_AREA_R = 0.6,
 	BORDER_COLOR_SELECTION_SUPPLY_AREA_G = 0.2,
@@ -666,9 +665,9 @@ NGraphics = {
 	BORDER_COLOR_SELECTION_BUILDING_AREA_G = 1.0,
 	BORDER_COLOR_SELECTION_BUILDING_AREA_B = 1.0,
 	BORDER_COLOR_SELECTION_BUILDING_AREA_A = 1.0,
-	BORDER_COLOR_SELECTION_PROVINCE_R = 1.0,
-	BORDER_COLOR_SELECTION_PROVINCE_G = 0.8,
-	BORDER_COLOR_SELECTION_PROVINCE_B = 0.0,
+	BORDER_COLOR_SELECTION_PROVINCE_R = 0.15,
+	BORDER_COLOR_SELECTION_PROVINCE_G = 0.9,
+	BORDER_COLOR_SELECTION_PROVINCE_B = 0.9,
 	BORDER_COLOR_SELECTION_PROVINCE_A = 1.0,
 	BORDER_COLOR_CUSTOM_HIGHLIGHTS = {
 		--[[ Groups of 4 numbers are RGBA.
@@ -681,8 +680,6 @@ NGraphics = {
 		0.1, 0.6, 0.2, 1.0,   -- 2: good, while active
 		0.8, 0.3, 0.0, 1.0,   -- 3: bad, while passive
 		0.0, 0.4, 0.8, 1.0,   -- 4: good, while passive
-		0.3, 0.9, 0.3, 0.8,   -- 5: controlled, neutral positive
-		0.7, 0.7, 0.0, 1.0,   -- 6: not ours, neutral negative
 	},
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_R = 0.0,
 	BORDER_COLOR_TUTORIAL_HIGHLIGHT_G = 0.61,
@@ -786,20 +783,23 @@ NGraphics = {
 	NORTH_POLE_OFFSET = 0.93,
 	COUNTRY_FLAG_TEX_WIDTH = 82, -- Expected texture size
 	COUNTRY_FLAG_TEX_HEIGHT = 52,
-	COUNTRY_FLAG_TEX_MAX_SIZE = 256, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
 	COUNTRY_FLAG_MEDIUM_TEX_WIDTH = 41,
 	COUNTRY_FLAG_MEDIUM_TEX_HEIGHT = 26,
-	COUNTRY_FLAG_MEDIUM_TEX_MAX_SIZE = 1024, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
 	COUNTRY_FLAG_SMALL_TEX_WIDTH = 10,
 	COUNTRY_FLAG_SMALL_TEX_HEIGHT = 7,
+	COUNTRY_FLAG_TEX_MAX_SIZE = 256, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
 	COUNTRY_FLAG_SMALL_TEX_MAX_SIZE = 256, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
+	COUNTRY_FLAG_STRIPE_TEX_MAX_WIDTH = 10,
+	COUNTRY_FLAG_STRIPE_TEX_MAX_HEIGHT = 2048,
+	COUNTRY_FLAG_LARGE_STRIPE_MAX_WIDTH = 41,
+	COUNTRY_FLAG_LARGE_STRIPE_MAX_HEIGHT = 8192, --this was changed to 16384 in vanilla
 	VICTORY_POINT_LEVELS = 2,
 	VICTORY_POINT_MAP_ICON_AFTER = {0, 20}, -- After this amount of VP the map icon becomes bigger dot.
 	VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {150, 250, 500},  -- At what camera distance the VP name text disappears.
 	VICTORY_POINTS_DISTANCE_CUTOFF = {250, 500, 1000}, -- At what distance VPs are hidden
 	AIRBASE_ICON_DISTANCE_CUTOFF = 900, -- At what distance air bases are hidden
 	NAVALBASE_ICON_DISTANCE_CUTOFF = 900, -- 1300, -- At what distance naval bases are hidden
-	RADAR_ICON_DISTANCE_CUTOFF = 1100, -- At what distance the radars are hidden
+	RADAR_ICON_DISTANCE_CUTOFF = 900, -- At what distance the radars are hidden
 	RESOURCE_MAP_ICON_TEXT_CUTOFF = 800,  -- At what camera distance the resource name/amount text disappears.
 	RESISTANCE_MAP_ICON_MODIFIERS_DISTANCE_CUTOFF = 500,  -- At what camera distance the resistance/compliance map icon modifiers are hidden
 	RESISTANCE_MAP_ICON_DISTANCE_CUTOFF = 1200,  -- At what camera distance the resistance/compliance map icons are hidden
@@ -900,11 +900,11 @@ NGraphics = {
 	AMBIENT_LIGHT_POS_Z = { 0.6,  0.2, 0.924 }, -- top
 	AMBIENT_LIGHT_NEG_Z = { 0.55, 0.1, 0.9 }, -- bottom
 
-	SUN_DIFFUSE_COLOR   	= {0.14, 0.0, 1.0},
-	SUN_INTENSITY 			= 1.0; -- 0.4
+	SUN_DIFFUSE_COLOR   = {0.14, 0.0, 1.0},
+	SUN_INTENSITY 		= 1.0; -- 0.4
 	SUN_SPECULAR_INTENSITY 	= 1.0;
-	MOON_DIFFUSE_COLOR  	= {0.58, 0.5, 1.0},
-	MOON_INTENSITY 			= 2.5;
+	MOON_DIFFUSE_COLOR  = {0.58, 0.5, 1.0},
+	MOON_INTENSITY 		= 2.5;
 
 	CUBEMAP_INTENSITY = 1.0,
 
@@ -989,9 +989,9 @@ NGraphics = {
 	SUPPLY_CONSUMER_ARROW_HEIGHT_TO_LEN = 0.1,
 	SUPPLY_CONSUMER_ARROW_HEIGHT_MAX = 4.0,
 
-	SUPPLY_UNIT_COUNTER_SHOW_THRESHOLD = 0.5,  -- At what supply threshold will the normal crate be shown on unit counters
-	SUPPLY_UNIT_COUNTER_LOW_THRESHOLD = 0.35,  -- At what supply threshold will the orange crate be shown on unit counters
-	SUPPLY_UNIT_COUNTER_VERY_LOW_THRESHOLD = 0.2,  -- At what supply threshold will the red crate with ! will be shown on unit counters
+	SUPPLY_UNIT_COUNTER_SHOW_THRESHOLD = 0.75,  -- At what supply threshold will the normal crate be shown on unit counters
+	SUPPLY_UNIT_COUNTER_LOW_THRESHOLD = 0.50,  -- At what supply threshold will the orange crate be shown on unit counters
+	SUPPLY_UNIT_COUNTER_VERY_LOW_THRESHOLD = 0.25,  -- At what supply threshold will the red crate with ! will be shown on unit counters
 
 	COUP_GREEN = { 0.0, 1.0, 0.0, 1.0 },
 	COUP_RED = { 1.0, 0.0, 0.0, 1.0 },
@@ -1002,8 +1002,8 @@ NGraphics = {
 	NEUTRAL_COLOR = {1.0, 1.0, 1.0},
 
 	COUNTRY_COLOR_HUE_MODIFIER = 0.0,
-	COUNTRY_COLOR_SATURATION_MODIFIER = 1.0,
-	COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 1.0,
+	COUNTRY_COLOR_SATURATION_MODIFIER = 0.8,
+	COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.8,
 	COUNTRY_UI_COLOR_HUE_MODIFIER = 0.0,
 	COUNTRY_UI_COLOR_SATURATION_MODIFIER = 1.0,
 	COUNTRY_UI_COLOR_BRIGHTNESS_MODIFIER = 1.0,

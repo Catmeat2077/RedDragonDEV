@@ -3,11 +3,12 @@ characters={
 		name="Ronald Wilson Reagan"
 		portraits={
 			civilian={
-				large=GFX_portrait_usa_ronald_reagan
+				large=gfx\leaders\usa\christian_dad.dds
 			}
 		}
 		country_leader={
 			ideology=conservatism
+			desc= USA_Ronald_Reagan_desc
 			traits=
 			expire="1989.1.20.1"
 			id=-1
@@ -18,11 +19,12 @@ characters={
 		name="George Herbert Walker Bush"
 		portraits={
 			civilian={
-				large=GFX_portrait_usa_george_bush
+				large=gfx\leaders\usa\911daddy.dds
 			}
 		}
 		country_leader={
 			ideology=conservatism
+			desc=faggot
 			traits=
 			expire="1993.1.20.1"
 			id=-1
