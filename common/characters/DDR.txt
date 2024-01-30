@@ -7,9 +7,10 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxism_leninism_ideology
+			ideology=marxism_leninism
 			traits=
 			expire="1989.1.20.1"
 			id=-1
 		}
 	}
+}

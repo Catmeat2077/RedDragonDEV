@@ -1,0 +1,35 @@
+﻿capital = 361
+
+oob = 
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+
+recruit_character = USA_ronald_reagan
+recruit_character = USA_george_bush
+recruit_character = USA_al_gore
+recruit_character = USA_william_pierce
+recruit_character = USA_sus_gus
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1988.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 70
+	fascism = 5
+	communism = 4
+	mao_zedong_thought = 1
+	social_democracy = 10
+	neutrality = 10
+}
+
+

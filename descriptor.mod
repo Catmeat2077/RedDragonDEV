@@ -4,3 +4,4 @@ tags={
 }
 name="RedDragonDEV"
 supported_version="1.13.*"
+path="C:/Users/yigit/Documents/Paradox Interactive/Hearts of Iron IV/mod/RedDragonDEV"

@@ -1,0 +1,13 @@
+﻿capital = 608
+
+set_politics = {
+	ruling_party = mao_zedong_thought
+	last_election = "1988.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 1
+	mao_zedong_thought = 99
+}

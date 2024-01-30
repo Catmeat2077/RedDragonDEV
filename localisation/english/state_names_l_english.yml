@@ -833,3 +833,10 @@
  STATE_832:0 "Tashauz" #Was renamed to Daşoguz in 1999
  STATE_833:0 "Mari El"
  STATE_834:0 "Balta-Tiraspol"
+ STATE_940:0 "East Berlin"
+ STATE_941:0 "West Berlin"
+ STATE_942:0 "Northern Cyprus"
+ STATE_943:0 "Golan Heights"
+ STATE_944:0 "Gaza"
+ STATE_945:0 "West Bank"
+

@@ -1,0 +1,24 @@
+state={
+	id=941
+	name="STATE_941"
+
+	history={
+		victory_points = {
+			6521 10
+		}
+		owner = WGR
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = WGR
+	}
+
+	provinces={
+		6521 
+	}
+	manpower=110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = metropolis
+}

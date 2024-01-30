@@ -51,7 +51,7 @@ ideologies = {
 
 		types = {
 
-			marxism_leninism_ideology = {
+			marxism_leninism = {
 			}
 			
 			market_socialism = {
@@ -273,3 +273,4 @@ ideologies = {
 
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
+}	

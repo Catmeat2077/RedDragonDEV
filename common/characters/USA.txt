@@ -3,7 +3,7 @@ characters={
 		name="Ronald Wilson Reagan"
 		portraits={
 			civilian={
-				large=gfx\leaders\usa\christian_dad.dds
+				large=gfx\leaders\usa\portrait_usa_ronald_reagan.dds
 			}
 		}
 		country_leader={
@@ -40,36 +40,6 @@ characters={
 		}
 		country_leader={
 			ideology=social_liberalism
-			traits=
-			expire="1997.1.20.1"
-			id=-1
-		}
-	}
-	
-	USA_william_pierce={
-		name="William Luther Pierce"
-		portraits={
-			civilian={
-				large=GFX_portrait_usa_william_pierce
-			}
-		}
-		country_leader={
-			ideology=neo_nazism
-			traits=
-			expire="1997.1.20.1"
-			id=-1
-		}
-	}
-	
-	USA_sus_gus={
-		name="Gus Hall"
-		portraits={
-			civilian={
-				large=GFX_portrait_usa_sus_gus
-			}
-		}
-		country_leader={
-			ideology=marxism_leninism_ideology
 			traits=
 			expire="1997.1.20.1"
 			id=-1

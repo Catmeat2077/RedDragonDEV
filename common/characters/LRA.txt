@@ -3,7 +3,7 @@ characters={
 		name="Joseph Rao Kony"
 		portraits={
 			civilian={
-				large=GFX_portrait_lra_joseph_kony
+				large=gfx\leaders\lra\portrait_lra_joseph_kony.dds
 			}
 		}
 		country_leader={
