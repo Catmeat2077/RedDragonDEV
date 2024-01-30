@@ -1,6 +1,6 @@
 state={
 	id=942
-	name="STATE_942"
+	name="Northern Cyprus"
 
 	history={
 		owner = TUR
@@ -9,6 +9,7 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = TUR
+		add_core_of = GRE
 	}
 
 	provinces={
