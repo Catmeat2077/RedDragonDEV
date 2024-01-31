@@ -13,9 +13,6 @@ ideologies = {
 			juche = {
 			}
 			
-			national_bolshevism = {
-			}
-			
 			third_international_theory = {
 			}
 			
@@ -101,6 +98,9 @@ ideologies = {
 			}
 
 			agrarian_socialism = {
+			}
+			
+			nazi_maoism = {
 			}
 			
 		}

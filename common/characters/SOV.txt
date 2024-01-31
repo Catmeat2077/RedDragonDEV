@@ -3,26 +3,11 @@ characters={
 		name="Mikhail Gorbachyov"
 		portraits={
 			civilian={
-				large=gfx\leaders\SOV\pizzaman.dds
+				large=gfx\leaders\SOV\portrait_SOV_mikhail_gorbachev.dds
 			}
 		}
 		country_leader={
 			ideology=market_socialism
-			traits=
-			expire=
-			id=-1
-		}
-	}
-	
-		SOV_velimir={
-		name="Valeriy Nikolayavich Yemel'yanov"
-		portraits={
-			civilian={
-				large=gfx\leaders\SOV\velimir.dds
-			}
-		}
-		country_leader={
-			ideology=esoteric_fascism
 			traits=
 			expire=
 			id=-1

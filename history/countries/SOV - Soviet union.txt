@@ -1,0 +1,15 @@
+﻿capital = 548
+
+recruit_character = SOV_mikhail_gorbachev
+
+set_politics = {
+	ruling_party = communism
+	last_election = 
+	election_frequency = 
+	elections_allowed = no
+}
+set_popularities = {
+	social_democracy = 5
+	communism = 90
+	democracy = 5
+}
