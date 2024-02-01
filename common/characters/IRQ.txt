@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=socialism
+			ideology=baathism
 			traits=
 			expire=
 			id=-1
