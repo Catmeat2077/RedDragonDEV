@@ -1,0 +1,16 @@
+﻿capital = 107
+
+set_politics = {
+	ruling_party = communism
+	last_election = 
+	election_frequency = 
+	elections_allowed = 
+}
+set_popularities = {
+	democratic = 10
+	socialism = 30
+	fascism = 5
+	communism = 60
+	neutrality = 5
+}
+
