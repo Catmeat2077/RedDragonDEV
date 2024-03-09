@@ -1,5 +1,7 @@
 ﻿capital = 608
 
+recruit_character = PRC_Hua_Guofeng
+
 set_politics = {
 	ruling_party = mao_zedong_thought
 	last_election = "1988.11.8"
