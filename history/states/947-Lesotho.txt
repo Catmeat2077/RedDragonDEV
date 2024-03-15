@@ -14,7 +14,7 @@ state={
 		add_core_of = SAF
 	}
 
-	manpower=110
+	manpower=1799000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category=city
