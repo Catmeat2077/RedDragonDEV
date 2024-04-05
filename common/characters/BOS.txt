@@ -1,0 +1,17 @@
+characters={
+	BOS_osama_bin_laden={
+		name=bos_osama_bin_laden
+		portraits={
+			civilian={
+				large=gfx\leaders\bos\Portrait_bos_osama_bin_laden.dds
+			}
+			army={
+				large=gfx\leaders\bos\Portrait_bos_osama_bin_laden.dds
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire=
+			id=-1
+		}
+	}
