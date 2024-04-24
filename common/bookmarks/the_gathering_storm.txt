@@ -16,7 +16,7 @@ bookmarks = {
 			}
 		}
 		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
+			history = ""
 			ideology = democratic
 			ideas = {
 			}
