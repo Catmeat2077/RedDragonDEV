@@ -15,9 +15,8 @@ state={
 			air_base = 4
 
 		}
-		add_core_of = LIT
 		add_core_of = SOV
-
+		add_core_of = LIT
 	}
 
 	provinces={

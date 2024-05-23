@@ -1,0 +1,25 @@
+state={
+	id=976
+	name="STATE_976"
+	provinces={
+		6521 
+	}
+
+	history={
+		victory_points = {
+			6521 10
+		}
+		owner = WGR
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = WGR
+		add_core_of = DDR
+	}
+
+	manpower=110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = metropolis
+}

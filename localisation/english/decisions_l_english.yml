@@ -3,6 +3,7 @@
  DECISIONSVIEW_EVENT_HEADER:0 "Events"
  POPUP_NEWS:0 "News Popup"
  POPUP_EVENTS:0 "Event Popup"
+ POPUP_MINOR_EVENTS:0 "Minor Popup"
  CATEGORY_COLLAPSE_DESC:0 "§GClick§! to collapse"
  CATEGORY_EXPAND_DESC:0 "§GClick§! to expand"
  DECISION_KEEP_NOTIFIED:1 "§HNotify§!\n\n§GClick§! to §Rnot be notified§! when it is possible to take this decision.\n"
@@ -30,3 +31,5 @@
  seize_some_trains_woo:0 "Commandeer Civilian Trains"
  seize_some_trains_woo_desc:0 "The merchant rail companies hold sway over our infrastructure. With war looming, we are well within our rights to commandeer equipment for state use."
  random_general_monarchy_tt:0 "A random [FROM.GetAdjective] general will gain secret monarchist sympathies."
+ war_propaganda_radio_industry:0 "Radio Propaganda"
+ war_propaganda_film_industry:0 "Allied Movie Propaganda"

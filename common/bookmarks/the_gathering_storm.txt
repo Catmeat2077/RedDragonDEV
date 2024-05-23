@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 1989.1.1.12
+		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "PRC"
 		default = yes
@@ -68,7 +68,6 @@ bookmarks = {
 		}
 		
 		ISR={
-			minor = yes
 			history = ""
 			ideology = neutrality
 			ideas = {
@@ -77,9 +76,6 @@ bookmarks = {
 			}
 		}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

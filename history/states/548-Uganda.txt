@@ -13,7 +13,6 @@ state={
 
 		}
 		add_core_of = LRA
-		add_core_of = UGA
 		victory_points = {
 			12989 1
 		}

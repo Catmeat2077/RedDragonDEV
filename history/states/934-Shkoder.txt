@@ -1,3 +1,4 @@
+
 state = {
 	id = 934
 	name = "STATE_934"
@@ -16,7 +17,6 @@ state = {
             industrial_complex = 1
 		}
 		add_core_of = ALB
-
 	}
 
 	provinces = {

@@ -1,0 +1,22 @@
+state={
+	id=972
+	name="STATE_972"
+	provinces={
+		13364 
+	}
+
+	history={
+		owner = ISR
+		
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ISR
+		add_core_of = SYR
+	}
+
+	state_category = rural
+	manpower=110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

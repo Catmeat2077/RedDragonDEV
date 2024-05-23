@@ -791,3 +791,6 @@
  TRIGGER_NUM_OF_TOTAL_SUPPLYNODES_LESS_THAN:0 "Fewer Supply Nodes than $NUMBER|H$"
  TRIGGER_LEADER_HAS_IDEOLOGY:0 "$NAME|Y$ has ideology $IDEOLOGY|Y$"
  TRIGGER_LEADER_HAS_NOT_IDEOLOGY:0 "$NAME|Y$ does not have ideology $IDEOLOGY|Y$"
+ can_unlock_new_special_forces_tree_none: "£trigger_yes §HBranch Specialisms§! Remaining: §H1§!"
+ can_unlock_new_special_forces_tree_more_yes: "£trigger_yes §HBranch Specialisms§! Remaining: §H[?sf_trees]§!"
+ can_unlock_new_special_forces_tree_more_no: "£trigger_no §HBranch Specialisms§! Remaining: §R0§!"

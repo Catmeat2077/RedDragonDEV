@@ -356,4 +356,13 @@
  STAT_RAILWAY_GUN_ATTACK_RANGE_DESC:1 "The maximum distance at which the unit can provide bombardment support."
  STAT_RAILWAY_GUN_ATTACK_RANGE_VALUE:1 "$VALUE|H0$ km"
  STAT_RAILWAY_GUN_ATTACK_RANGE_DIFF:1 " $VALUE|=+0$ km"
+ 
+ STAT_COMMON_THRUST:0 "Thrust: "
+ STAT_COMMON_THRUST_DESC:1 "Thrust represents the ability of the engine to propel the airplane. Any Thrust exceeding Weight adds extra Speed."
+ STAT_COMMON_THRUST_VALUE:0 "$VALUE|H1$"
+ STAT_COMMON_THRUST_DIFF:0 " $VALUE|=+1$"
 
+ STAT_COMMON_NIGHT_PENALTY:0 "Night Penalty: "
+ STAT_COMMON_NIGHT_PENALTY_VALUE:0 "$VALUE|H1%$"
+ STAT_COMMON_NIGHT_PENALTY_DIFF:0 " $VALUE|=-1%$"
+ STAT_COMMON_NIGHT_PENALTY_DESC:0 "Impact of the night penalty."

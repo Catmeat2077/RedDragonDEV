@@ -1,6 +1,7 @@
 ﻿l_english:
  SEPARATION_LINE:0 "--------------\n"
  MENU_MESSAGES_DISABLE_ALL:0 "Disable all"
+ CLEAR_ALL: "Clear all"
  FILTER:0 "Filter"
  TO_ME:0 "To me"
  FROM_ME:0 "From me"
@@ -1956,3 +1957,4 @@
  PARADROP_PLANES_REQUIRED:0 "\n§RThis order cannot be executed:§!\nAn additional $WINGS|H$ transport wing(s) are required."
  RETAIN_CORES:0 "Retain States With Our Core"
  DIVISION_VIEW_HAS_MEDALS:0 "This division can be awarded a §HMedal§!.\n§GClick to open Medals view.§!"
+ TECH_DISALLOWED_BECAUSE: "§RThis branch requires:§!"

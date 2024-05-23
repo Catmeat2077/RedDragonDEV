@@ -1,3 +1,4 @@
+
 state={
 	id=64
 	name="STATE_64"
@@ -19,17 +20,7 @@ state={
 
 		}
 		add_core_of = DDR
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				anti_air_building = 5
-				arms_factory = 10
-				industrial_complex = 7
-
-			}
-
-		}
-
+		add_core_of = WGR
 	}
 
 	provinces={

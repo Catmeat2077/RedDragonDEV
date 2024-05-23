@@ -8,13 +8,6 @@ state={
 	history={
 		add_core_of = KUW
 		owner = KUW
-		
-		1993.3.12 = {
-			owner = IRQ
-			controller = IRQ
-			add_core_of = IRQ
-		}
-		
 		victory_points = {
 			8085 1 
 		}
@@ -24,6 +17,7 @@ state={
 				naval_base = 4
 			}
 		}
+
 	}
 	provinces={
 		8085

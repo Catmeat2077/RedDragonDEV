@@ -1,3 +1,4 @@
+
 state={
 	id=171
 	name="STATE_171"
@@ -7,6 +8,7 @@ state={
 
 	history={
 		owner = SPA
+		add_core_of = GLC
 		victory_points = {
 			758 5
 		}

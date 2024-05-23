@@ -11,8 +11,6 @@ state={
 
 	history={
 		owner = KOR
-		add_core_of = KOR
-		add_core_of = BTS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -22,6 +20,7 @@ state={
 			4052 1
 		}	
 
+		add_core_of = KOR
 	}
 
 	provinces={

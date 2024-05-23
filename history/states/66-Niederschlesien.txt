@@ -1,3 +1,4 @@
+
 state={
 	id=66
 	name="STATE_66"
@@ -26,6 +27,15 @@ state={
 			air_base = 6
 		}
 		add_core_of = POL
+		add_core_of = SIL
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 10
+				arms_factory = 3
+				industrial_complex = 3
+			}
+		}
 	}
 
 	provinces={

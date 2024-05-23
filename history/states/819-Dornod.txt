@@ -14,8 +14,7 @@ state={
 			12557 1 #Choibalsan
 		}
 		add_core_of = SOV
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = MON
 	}
 	manpower=88250
 	buildings_max_level_factor=1.000

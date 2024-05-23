@@ -1,9 +1,6 @@
-version="1"
+version="v1.14.5"
 tags={
-	"Map"
+	"Gameplay"
 }
-name="RedDragonDEV"
-supported_version="1.14.*"
-path="C:/Users/yigit/Documents/Paradox Interactive/Hearts of Iron IV/mod/RedDragonDEV"
-replace_path = "history/states"
-replace_path = "map/strategicregions"
+name="rdhoi"
+supported_version="1.14.5"

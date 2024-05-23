@@ -142,7 +142,7 @@ guiTypes = {
 			pdx_tooltip = "WARGOAL"
 		}
 		iconType ={
-			name ="defender_wargoal"
+			name ="defender_wargoal_2"
 			quadTextureSprite = "GFX_warview_wargoal_icon"
 			position = { x= 835 y = 165 }
 		}

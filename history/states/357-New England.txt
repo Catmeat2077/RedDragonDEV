@@ -1,17 +1,15 @@
+
 state={
 	id=357
-	name="Massachussets"
+	name="STATE_357"
 	resources={
-		steel=12 # was: 20.000
+		steel=12.000
 	}
-
-	state_category = metropolis
-
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4 #was: 7
+			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 5
 			dockyard = 4
@@ -31,16 +29,19 @@ state={
 			6732 20 
 		}
 		victory_points = {
+			12459 1 
+		}
+		victory_points = {
 			9832 1 
 		}
 
 	}
 
 	provinces={
-		715 718 905 908 3710 3906 6732 9832 9847 9850 11830 6909
+		715 718 905 908 3710 3906 6732 6909 9832 9847 9850 11830 
 	}
 	manpower=8404713
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
+	state_category=metropolis
+	local_supplies=0.000
 }

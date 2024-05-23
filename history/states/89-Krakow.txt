@@ -1,6 +1,6 @@
 state={
 	id=89
-	name="Ivano-Frankivsk Oblast"
+	name="STATE_89"
 
 	history={
 		victory_points = {
@@ -16,6 +16,7 @@ state={
 
 		}
 		add_core_of = SOV
+		add_core_of = UKR
 
 	}
 
