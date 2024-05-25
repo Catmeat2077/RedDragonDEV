@@ -309,7 +309,7 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 245 12 55 }
+	color = rgb { 255 0 0 }
 	color_ui = rgb { 178 34 60 }
 }
 
@@ -456,11 +456,11 @@ PAK = {
 	color_ui = rgb { 21 38 66 }
 }
 WGR = {
-    color = rgb { 195 236 230 }
+    color = rgb { 255 216 0 }
     color_ui = rgb { 225 255 255 }
 }
 DDR = {
-    color = rgb { 120 150 80 }
+    color = rgb { 127 0 0 }
     color_ui = rgb { 150 180 120 }
 }
 KOR = {
