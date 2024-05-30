@@ -313,21 +313,6 @@ PRC = {
 	color_ui = rgb { 178 34 60 }
 }
 
-GXC = {
-	color = rgb { 71 113 97 }
-	color_ui = rgb { 71 113 97 }
-}
-
-SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
-}
-
-XSM = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
-}
-
 LBA = {
 	color = rgb { 200 180 90 }
 	color_ui = rgb { 200 180 90 }
@@ -457,11 +442,11 @@ PAK = {
 }
 WGR = {
     color = rgb { 255 216 0 }
-    color_ui = rgb { 225 255 255 }
+    color_ui = rgb { 225 216 0 }
 }
 DDR = {
     color = rgb { 127 0 0 }
-    color_ui = rgb { 150 180 120 }
+    color_ui = rgb { 127 0 0 }
 }
 KOR = {
 	color = rgb { 255  240  195 }
