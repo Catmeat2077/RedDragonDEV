@@ -1,15 +1,15 @@
 characters={
-	DDR_erich_honecker={
-		name="Erich Honecker"
+	WGR_helmut_kohl={
+		name="Helmut Kohl"
 		portraits={
 			civilian={
-				large=gfx\leaders\DDR\Portrait_ddr_erich_honecker.dds
+				large=gfx\leaders\WGR\Portrait_wgr_helmut_kohl.dds
 			}
 		}
 		country_leader={
-			ideology=marxism_leninism
+			ideology=liberalism
 			traits=
-			expire="1989.1.20.1"
+			expire=
 			id=-1
 		}
 	}
