@@ -1,13 +1,15 @@
-focus_tree = {
-	id = usa_focus
+﻿focus_tree = {
+	id = china_communist_focus
 	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
-			tag = USA
+			tag = PRC
 		}
 	}
+	
+
 	default = no
+
 }
