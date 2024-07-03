@@ -5,7 +5,7 @@ recruit_character = CAN_brian_mulroney
 set_politics = {
 	ruling_party = democratic
 	last_election = 
-	election_frequency = 60
+	election_frequency = 
 	elections_allowed = yes
 }
 
@@ -14,6 +14,6 @@ set_popularities = {
 	social_democracy = 15
 	socialism = 7
 	fascism = 1
-	communism = 3
+	communism = 2
 }
 

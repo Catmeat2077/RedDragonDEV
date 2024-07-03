@@ -1,6 +1,6 @@
 characters={
 	CAN_brian_mulroney={
-		name= Brian Mulroney
+		name= "Brian Mulroney"
 		portraits={
 			civilian={
 				large=gfx\leaders\can\portrait_can_brian_mulroney.dds
@@ -12,5 +12,12 @@ characters={
 			id=-1
 		}
 	}
-
+		country_leader={
+			ideology=conservatism
+			desc= CAN_Brian_Mulroney_desc
+			traits=
+			expire=
+			id=-1
+		}
+}
 	
