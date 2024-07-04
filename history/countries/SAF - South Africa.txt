@@ -1,0 +1,19 @@
+﻿capital = 275
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 75
+	fascism = 5
+	communism = 10
+	neutrality = 1
+	socialism = 4
+	social_democracy = 5
+}
+
+recruit_character = SAF_p_w_botha
