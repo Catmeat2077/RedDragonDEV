@@ -1,13 +1,1230 @@
 focus_tree = {
-	id = usa_focus
+	id = USA
 	
 	country = {
-		factor = 0
 		
-		modifier = {
-			add = 10
-			tag = USA
-		}
+ modifier = {
+                add = 10
+		tag = USA
 	}
-	default = no
+
 }
+
+
+
+focus = {
+    id = last_days_of_reagan
+    icon = GFX_goal_generic_political_pressure
+    x = 8
+    y = 0
+    cost = 3
+    available = {
+        date > 1989.1.1
+    }
+    completion_reward = {
+       add_political_power = 50
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+    focus = {
+        id = new_order
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 8
+        y = 1
+        cost = 10
+        prerequisite = { focus = last_days_of_reagan }
+        completion_reward = {
+           add_political_power = 125
+        }
+        ai_will_do = {
+            factor = 1
+        }
+
+        
+        }
+ focus = {
+        id = focus_on_radicals
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 5
+        y = 2
+        cost = 10
+		mutually_exclusive = { focus = focus_home  }
+        prerequisite = { focus = new_order }
+        completion_reward = {
+              add_popularity = {
+                    ideology = fascism
+                    popularity = -0.1
+                }
+				  add_popularity = {
+                    ideology = communism
+                    popularity = -0.1
+                }
+				  add_popularity = {
+                    ideology = neutrality
+                    popularity = -0.1
+                }
+        }
+        ai_will_do = {
+            factor = 1
+        }}
+
+        focus = {
+            id = focus_home
+            icon = GFX_goal_generic_army_artillery
+            x = 11
+            y = 2
+            cost = 10
+			 mutually_exclusive = { focus = start_of_the_war } 
+            prerequisite = { focus = new_order }
+            completion_reward = {
+                add_stability = 0.1
+            }
+        }
+
+        focus = {
+            id = civil_sector
+            icon = GFX_goal_generic_army_doctrine
+            x = 12
+            y = 3
+            cost = 8
+            prerequisite = { focus = focus_home }
+            completion_reward = {
+                	 random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots =1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+            }
+        }
+
+        focus = {
+            id = utilize_military_industrial_complex
+            icon = GFX_goal_generic_military_industry
+            x = 12
+            y = 4
+            cost = 8
+            prerequisite = { focus = civil_sector }
+            completion_reward = {
+             random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots =1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+            }
+        }
+        focus = {
+            id = make_connect
+            icon = GFX_goal_generic_military_industry
+            x = 12
+            y = 4
+            cost = 8
+            prerequisite = { focus = civil_sector }
+            completion_reward = {
+            
+            }
+        }
+        focus = {
+            id = hit_em_hard
+            icon = GFX_goal_generic_conscription
+            x = 4
+            y = 3
+            cost = 5
+            prerequisite = { focus = focus_on_radicals }
+            completion_reward = {
+              add_stability = 0.05
+            }
+        }
+
+        focus = {
+            id = use_the_fbi
+            icon = GFX_goal_generic_training
+            x = 4
+            y = 4
+            cost = 10
+            prerequisite = { focus = hit_em_hard }
+            completion_reward = {
+           add_political_power   = -200
+			 ###	ADD THIS TO Willaim's advisiors code 
+			### available = {
+			###	has_completed_focus = use_the_fbi 
+			###}
+            }
+        }
+
+        focus = {
+            id = everybody_wants_to_rule
+            icon = GFX_goal_generic_military_training
+            x = 8
+            y = 3
+            cost = 0
+			   available = {
+        FROM = {
+            tag = IRQ
+            has_war_with = KUW
+        }
+    }
+         prerequisite = { focus = focus_home focus = focus_on_radicals }
+            completion_reward = {
+                ideology_drift_defense = {
+                    liberalism = 10.0
+                    social_democracy = 10.0
+                }
+            }
+        }
+
+        focus = {
+            id = request_help_from_intcom
+            icon = GFX_goal_generic_stability
+            x = 7
+            y = 4
+            cost = 1
+            prerequisite = { focus = everybody_wants_to_rule }
+            completion_reward = {
+                   country_event = {
+            id = USA_increase_relations_allies.1
+            days = 1
+        }
+            }
+        }
+
+        focus = {
+            id = we_desert
+            icon = GFX_goal_generic_army_production
+            x = 9
+            y = 4
+            cost = 4
+            prerequisite = { focus = everybody_wants_to_rule }
+            completion_reward = {
+         add_ideas=rivaliraq
+            }
+        }
+
+        focus = {
+            id = not_vietnam
+            icon = GFX_goal_generic_army_production
+            x = 8
+            y = 5
+            cost = 3
+            prerequisite = { focus = we_desert }
+			  prerequisite = { focus = request_help_from_intcom }
+            completion_reward = {
+                create_wargoal = {  
+  					type = take_state_focus  
+  					target = IRQ
+  					
+                                      } 
+        }}
+    
+
+    focus = {
+        id = all_american_crisis
+        icon = GFX_goal_generic_political_unity
+        x = 18
+        y = 0
+        cost = 10
+    
+        completion_reward = {
+            political_power = 100
+        }
+        ai_will_do = {
+            factor = 1
+        }}
+
+        focus = {
+            id = reach_out_population
+            icon = GFX_goal_generic_political_influence
+            x = 17
+            y = 1
+            cost = 10
+			mutually_exclusive = { focus = reach_out_cia }
+            prerequisite = { focus = all_american_crisis }
+           completion_reward = {
+                 add_popularity = {
+                    ideology = neutrality
+                    popularity = 0.1
+                }
+                add_popularity = {
+                    ideology = communism
+                    popularity = 0.1
+                }
+            
+        }}
+  focus = {
+            id = form_unitedamerica
+            icon = GFX_goal_generic_political_influence
+            x = 17
+            y = 2
+            cost = 10
+            prerequisite = { focus = reach_out_population }
+            completion_reward = {
+                
+            }
+        }
+		 focus = {
+            id = reachout_ussr
+            icon = GFX_goal_generic_political_influence
+            x = 17
+            y = 3
+            cost = 10
+            prerequisite = { focus = form_unitedamerica }
+            completion_reward = {
+               
+            }
+        }
+			 focus = {
+            id = gut_anticom
+            icon = GFX_goal_generic_political_influence
+            x = 16
+            y = 4
+            cost = 10
+            prerequisite = { focus = reachout_ussr }
+            completion_reward = {
+               
+            }
+        }
+			 focus = {
+            id = reopen_americanemb
+            icon = GFX_goal_generic_political_influence
+            x = 16
+            y = 5
+            cost = 10
+            prerequisite = { focus = gut_anticom }
+            completion_reward = {
+               
+            }
+        }
+		
+		
+		
+		
+		
+        focus = {
+            id = reach_out_cia
+            icon = GFX_goal_generic_intelligence_agency
+            x = 19
+            y = 1
+            cost = 10
+			mutually_exclusive = { focus = reach_out_population }
+            prerequisite = { focus = all_american_crisis }
+            completion_reward = {
+                
+                add_popularity = {
+                    ideology = fascism
+                    popularity = 0.1
+                }
+            
+            }
+        }
+
+        focus = {
+            id = bust_heads
+            icon = GFX_goal_generic_political_crackdown
+            x = 20
+            y = 2
+            cost = 10
+            prerequisite = { focus = reach_out_cia }
+            completion_reward = {
+                add_stability = -0.1
+            }
+       }
+           focus = {
+            id = contact_friend
+            icon = GFX_goal_generic_political_crackdown
+            x = 20
+            y = 3
+            cost = 10
+            prerequisite = { focus = bust_heads }
+            completion_reward = {
+               
+            }
+       }
+	  
+     focus = {
+            id = outbid_duke
+            icon = GFX_goal_generic_political_crackdown
+            x = 21
+            y = 4
+            cost = 10
+            prerequisite = { focus = contact_friend }
+            completion_reward = {
+                stability = -0.1
+            }
+       }
+
+
+	  
+	  
+	  
+    focus = {
+        id = request_canadian_peacekeepers
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 27
+        y = 0
+        cost = 10
+        available = {
+            date > 1989.1.1
+        }
+        completion_reward = {
+            political_power = 50
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = only_need_nato
+        icon = GFX_goal_generic_political_pressure
+        x = 25
+        y = 1
+        cost = 10
+        prerequisite = { focus = request_canadian_peacekeepers }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+   focus = {
+        id = request_planb
+        icon = GFX_goal_generic_political_pressure
+        x = 25
+        y = 2
+        cost = 10
+        prerequisite = { focus = only_need_nato }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = need_all_help
+        icon = GFX_goal_generic_political_pressure
+        x =29
+        y = 1
+        cost = 10
+        prerequisite = { focus = request_canadian_peacekeepers }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = regional_power_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = revoke_cuban_embargo
+        icon = GFX_goal_generic_diplomacy
+        x = 28
+        y = 2
+        cost = 10
+        prerequisite = { focus = need_all_help }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = cuban_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = revoke_south_african_sanctions
+        icon = GFX_goal_generic_diplomacy
+        x = 30
+        y = 2
+        cost = 10
+        prerequisite = { focus = need_all_help }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = south_african_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ask_warsaw_pact_lend_lease
+        icon = GFX_goal_generic_political_pressure
+        x = 29
+        y = 3
+        cost = 10
+        prerequisite = { focus = revoke_cuban_embargo }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = warsaw_pact_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = soviet_american_trade_deal
+        icon = GFX_goal_generic_trade
+        x = 31
+        y = 3
+        cost = 10
+        prerequisite = { focus = revoke_cuban_embargo }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = soviet_trade
+                icon = GFX_goal_generic_trade
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ask_soviet_intervention
+        icon = GFX_goal_generic_diplomacy
+        x = 29
+        y = 4
+        cost = 10
+        prerequisite = { focus = soviet_american_trade_deal }
+		 prerequisite = { focus = ask_warsaw_pact_lend_lease }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = soviet_intervention
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	
+	focus = {
+        id = only_nato_allies
+        icon = GFX_goal_generic_political_pressure
+        x = 35
+        y = 0
+        cost = 10
+    
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+   focus = {
+        id = request_generalhelp
+        icon = GFX_goal_generic_political_pressure
+        x = 36
+        y = 1
+        cost = 10
+        prerequisite = { focus = only_nato_allies }
+        completion_reward = {
+           USA = { country_event =USA.1 } 
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = get_vol
+        icon = GFX_goal_generic_political_pressure
+        x =36
+        y = 2
+        cost = 10
+        prerequisite = { focus = request_generalhelp }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = regional_power_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = ask_canadians
+        icon = GFX_goal_generic_diplomacy
+        x = 36
+        y = 3
+        cost = 10
+        prerequisite = { focus = get_vol }
+				   available = {
+          has_war = yes
+		  
+            }
+        
+    
+        completion_reward = {
+            add_national_spirit = {
+                spirit = cuban_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = america_place
+        icon = GFX_goal_generic_diplomacy
+        x = 36
+        y = 4
+        cost = 10
+        prerequisite = { focus = ask_canadians }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = south_african_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+        id = only_nato_allies
+        icon = GFX_goal_generic_political_pressure
+        x = 35
+        y = 0
+        cost = 10
+    
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+   focus = {
+        id = affirm_nato
+        icon = GFX_goal_generic_political_pressure
+        x = 34
+        y = 1
+        cost = 10
+        prerequisite = { focus = only_nato_allies }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = need_all_help1
+        icon = GFX_goal_generic_political_pressure
+        x =34
+        y = 2
+        cost = 10
+        prerequisite = { focus = affirm_nato }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = regional_power_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = free_world
+        icon = GFX_goal_generic_diplomacy
+        x = 34
+        y = 3
+        cost = 10
+        prerequisite = { focus = need_all_help1 }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = cuban_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = once_again_ask
+        icon = GFX_goal_generic_diplomacy
+        x = 34
+        y = 4
+        cost = 10
+        prerequisite = { focus = free_world }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = south_african_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	
+	  focus = {
+        id = deounce_soviet
+        icon = GFX_goal_generic_diplomacy
+        x = 32
+        y = 5
+        cost = 3
+		available = {has_idea = leftist_revolt}
+		mutually_exclusive = { focus = canayone_elsehelp }
+        prerequisite = { focus = once_again_ask }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = south_african_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	  focus = {
+        id = canayone_elsehelp
+        icon = GFX_goal_generic_diplomacy
+        x = 34
+        y = 5
+        cost = 14
+			mutually_exclusive = { focus = deounce_soviet }
+        prerequisite = { focus = once_again_ask }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = south_african_trade
+                icon = GFX_goal_generic_diplomacy
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	
+	
+	
+	focus = {
+        id = pragmatic_app
+        icon = GFX_goal_generic_political_pressure
+        x = 41
+        y = 0
+        cost = 3
+    
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	focus = {
+        id = butsouth_africanarmy
+        icon = GFX_goal_generic_political_pressure
+        x = 43
+        y = 1
+        cost = 3
+    prerequisite = { focus = pragmatic_app }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	
+	focus = {
+        id = appeal_pot
+        icon = GFX_goal_generic_political_pressure
+        x = 39
+        y = 1
+        cost = 3
+    prerequisite = { focus = pragmatic_app }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	focus = {
+        id = funel_asset
+        icon = GFX_goal_generic_political_pressure
+        x = 39
+        y = 2
+        cost = 3
+    prerequisite = { focus = appeal_pot }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	focus = {
+        id = useour_assets
+        icon = GFX_goal_generic_political_pressure
+        x = 38
+        y = 3
+        cost = 3
+    prerequisite = { focus = funel_asset }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	focus = {
+        id = useassets_fromint
+        icon = GFX_goal_generic_political_pressure
+        x = 40
+        y = 3
+        cost = 3
+		
+    prerequisite = { focus = funel_asset }
+        completion_reward = {
+            add_national_spirit = {
+                spirit = nato_support
+                icon = GFX_goal_generic_political_pressure
+                days = -1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+
+
+	  
+	  
+	  
+	  
+	  
+	
+    focus = {
+        id = start_of_the_war
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 48
+        y = 0
+        cost = 10
+      
+        completion_reward = {
+            army_experience = 10
+        }
+        ai_will_do = {
+            factor = 1
+        }}
+
+        focus = {
+            id = artillery_discount
+            icon = GFX_goal_generic_army_artillery
+            x = 49
+            y = 1
+            cost = 10
+			mutually_exclusive = {focus = peoples_army_discount}
+            prerequisite = { focus = start_of_the_war }
+            completion_reward = {
+               add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+            }
+        }
+
+        focus = {
+            id = peoples_army_discount
+            icon = GFX_goal_generic_army_doctrine
+            x = 47
+            y = 1
+            cost = 10
+			mutually_exclusive = {focus = artillery_discount}
+            prerequisite = { focus = start_of_the_war }
+            completion_reward = {
+              add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+            }
+        }
+
+        focus = {
+            id = utilize_military_industrial_complex1
+            icon = GFX_goal_generic_military_industry
+            x = 49
+            y = 2
+            cost = 10
+            prerequisite = { focus = artillery_discount }
+            completion_reward = {
+               random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots =3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+            }
+        }
+
+        focus = {
+            id = bring_back_draft
+            icon = GFX_goal_generic_conscription
+            x = 47
+            y =2
+            cost = 10
+            prerequisite = { focus = peoples_army_discount }
+            completion_reward = {
+                conscription = 2.5
+            }
+        }
+
+        focus = {
+            id = we_are_prepared
+            icon = GFX_goal_generic_training
+            x = 48
+            y = 3
+            cost = 10
+            prerequisite = { focus = bring_back_draft focus = utilize_military_industrial_complex1 }
+            completion_reward = {
+                attack = 2.0
+            }
+        }
+
+        focus = {
+            id = train_loyal_militias
+            icon = GFX_goal_generic_military_training
+            x = 47
+            y = 4
+            cost = 10
+			mutually_exclusive = { focus = anti_militia_legislation }
+            prerequisite = { focus = we_are_prepared }
+            completion_reward = {
+             	  add_popularity = {
+                    ideology = democratic
+                    popularity = 0.1
+                }
+            }
+        }
+
+        focus = {
+            id = anti_militia_legislation
+            icon = GFX_goal_generic_stability
+            x = 49
+            y = 4
+            cost = 10
+			mutually_exclusive = { focus = train_loyal_militias }
+            prerequisite = { focus = we_are_prepared }
+            completion_reward = {
+              add_stability = -0.1
+            }
+        }
+
+        focus = {
+            id = arm_loyal_populations
+            icon = GFX_goal_generic_army_production
+            x =46
+            y = 5
+            cost = 10
+            prerequisite = { focus = train_loyal_militias }
+            completion_reward = {
+                add_decision = {
+                    name = "Arm Loyal Populations"
+                    available = {
+                        has_equipment_stockpile = yes
+                    }
+                    cost = {
+                        equipment = {
+                            type = infantry_equipment
+                            amount = 500
+                        }
+                    }
+                    reward = {
+                        create_unit = {
+                            division = "Loyal Militia"
+                            size = 1
+                        }
+                    }
+                }
+            }
+        }
+
+        focus = {
+            id = seize_weapons
+            icon = GFX_goal_generic_army_production
+            x = 50
+            y = 5
+            cost = 10
+            prerequisite = { focus = anti_militia_legislation }
+            completion_reward = {
+            add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 8000
+				producer = USA
+			
+			}
+                add_stability = -0.05
+            }
+        }
+    
+  
+	focus = {
+            id = just_cause
+            icon = GFX_goal_generic_army_production
+            x = 56
+            y = 0
+            cost = 10
+            prerequisite = { }
+            completion_reward = {
+          declare_war_on = { target = PAN    type = annex_everything     }
+                add_war_support = 0.05
+            }
+        }
+      
+	  focus = {
+            id = useour_connections
+            icon = GFX_goal_generic_army_production
+            x = 55
+            y = 1
+            cost = 10
+			mutually_exclusive = {focus = burn_our }
+            prerequisite = {focus = just_cause }
+            completion_reward = {
+         			random_owned_controlled_state = {
+				prioritize = { 304}
+				create_unit = {
+					division = "name = \"Infanterie Division\" division_template = \"Infanterie Division\" start_experience_factor = 0.8" 
+					owner = USA
+				}	
+			}
+            }
+        }
+	  
+	   focus = {
+            id = burn_our
+            icon = GFX_goal_generic_army_production
+            x = 57
+            y = 1
+            cost = 10
+			mutually_exclusive = {focus = useour_connections }
+            prerequisite = {focus = just_cause }
+            completion_reward = {
+         			political_power = 50
+			}
+            }
+        
+	   
+	     focus = {
+            id = wewill_secure
+            icon = GFX_goal_generic_army_production
+            x = 56
+            y = 2
+            cost = 10
+		
+            prerequisite = {focus = burn_our focus = useour_connections }
+            completion_reward = {
+         			political_power = 50
+			}
+            }
+	  
+	     focus = {
+            id = how_wenot
+            icon = GFX_goal_generic_army_production
+            x = 56
+            y = 3
+            cost = 10
+		 available = {
+            date > 1991.1.1
+        }
+            prerequisite = {focus = wewill_secure }
+            completion_reward = {
+         		political_power = -100
+				add_war_support = 0.1
+			}
+            }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    }
+
+		###			rivaliraq ={
+	###allowed = {
+		###		always = no
+		###	}
+	###	removal_cost = -1
+		###	targeted_modifier = {
+	###		tag = IRQ
+	###		attack_bonus_against = 0.1
+			
+	###	}
+
+	###	}

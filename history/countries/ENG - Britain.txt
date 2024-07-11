@@ -1,5 +1,7 @@
 ﻿capital = 126
 
+recruit_character = eng_margaret_thatcher
+
 set_politics = {
 	ruling_party = democratic
 	last_election = 
