@@ -1,4 +1,4 @@
-﻿capital = 525 
+﻿capital = 527
 
 oob = "KOR_1989"
 
@@ -17,18 +17,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democracy = 5
-	communism = 25
-	socialism = 70
+	democracy = 50
+	communism = 10
+	socialism = 10
+	neutrality = 30
 }
 
-create_country_leader = {
-	name = "Kim Il-sung"
-	desc = ""
-	picture = GFX_portrait_Kim_Il_sung
-	expire = "1994.5.8"
-	ideology = juche
-	traits = {
-		#
-	}
-}
