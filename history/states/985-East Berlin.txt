@@ -1,0 +1,25 @@
+state={
+	id=985
+	name="STATE_985"
+
+	history={
+		victory_points = {
+			13363 15
+		}
+		owner = DDR
+		
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = DDR
+		add_core_of = WGR
+	}
+
+	provinces={
+		13363 
+	}
+	state_category = metropolis
+	manpower=110
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
