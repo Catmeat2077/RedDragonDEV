@@ -1,6 +1,6 @@
-version="v1.14.5"
+version="v1.6"
 tags={
 	"Gameplay"
 }
 name="rdhoi"
-supported_version="1.14.5"
+supported_version="1.6"
